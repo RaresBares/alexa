@@ -16,9 +16,9 @@ public class Alexa {
                 .start();
         proc.waitFor();
         final BufferedReader rdr = new BufferedReader(new InputStreamReader(proc.getInputStream()));
-        String str;
-        while ((str = rdr.readLine()) != null) {
-            System.out.println(str);
+        String ln;
+        while ((ln = rdr.readLine()) != null) {
+            System.out.println(ln);
         }
     }
 }
